@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'fncp-icon';
+  src:  url('fonts/fncp-icon.eot?4p0gyt');
+  src:  url('fonts/fncp-icon.eot?4p0gyt#iefix') format('embedded-opentype'),
+    url('fonts/fncp-icon.ttf?4p0gyt') format('truetype'),
+    url('fonts/fncp-icon.woff?4p0gyt') format('woff'),
+    url('fonts/fncp-icon.svg?4p0gyt#fncp-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fncp-"], [class*=" fncp-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fncp-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fncp-arrow-point-to-right:before {
+  content: "\e907";
+}
+.fncp-contact-form:before {
+  content: "\e908";
+}
+.fncp-download-symbol:before {
+  content: "\e909";
+}
+.fncp-profits:before {
+  content: "\e90a";
+}
+.fncp-report:before {
+  content: "\e90b";
+}
+.fncp-stats:before {
+  content: "\e90c";
+}
+.fncp-team:before {
+  content: "\e904";
+}
+.fncp-phone-call:before {
+  content: "\e905";
+}
+.fncp-target:before {
+  content: "\e906";
+}
+.fncp-money:before {
+  content: "\e900";
+}
+.fncp-money-1:before {
+  content: "\e901";
+}
+.fncp-statistics:before {
+  content: "\e902";
+}
+.fncp-two:before {
+  content: "\e903";
+}
+
+'fonts/fncp-icon.svg%3F4p0gyt#fncp-icon''fonts/fncp-icon.woff%3F4p0gyt''fonts/fncp-icon.ttf%3F4p0gyt''fonts/fncp-icon.eot%3F4p0gyt#iefix''fonts/fncp-icon.eot%3F4p0gyt'

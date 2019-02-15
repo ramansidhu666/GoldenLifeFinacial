@@ -1,0 +1,441 @@
+﻿@{
+    ViewBag.Title = "rrsp";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Goldenlife Finance</title>
+    <!-- mobile responsive meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/fncp-icon/style.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/Stroke-Gap-Icons-Webfont/style.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/animate.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/owl.carousel-2/assets/owl.carousel.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/owl.carousel-2/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- main stylesheet-->
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/css/style.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="thm-container clearfix">
+            <div class="logo pull-left"><a href="#" onclick="location.href='@Url.Action("index")'"><img src="~/GoldenLifeFinacial/images/logo.png" alt="Awesome Image"></a></div>
+            <div class="header-right-info pull-right">
+                <ul>
+                    <li>
+                        <div class="single-header-right-info">
+                            <div class="icon-box"><i class="icon icon-Pointer"></i></div>
+                            <div class="text-box">
+                                <p>
+                                    2600 Skymark Ave, Unit 9, Suite 104 <br>
+                                    Mississauga, ON, L4W5B2
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="single-header-right-info">
+                            <div class="icon-box"><i class="icon icon-Timer"></i></div>
+                            <div class="text-box">
+                                <p>Mon - Fri 10:00am - 6:00pm<br>Sat : By Appointment Only</p>
+                            </div>
+                        </div>
+                    </li>
+					 <li>
+                        <div class="single-header-right-info">
+                            <div class="icon-box"><i class="icon icon-Phone2"></i></div>
+                            <div class="text-box">
+                                <p>Off: 905-602-5533 <br>Dir: 647-281-5304 <br> Fax: 905-602-8471</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav id="main-navigation-wrapper" class="navbar navbar-default finance-navbar">
+        <div class="thm-container">
+            <div class="navbar-header">
+                <div class="logo-menu"><img src="~/GoldenLifeFinacial/images/new/logo-menu.png" alt=""></div>
+                <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="col-md-2 col-sm-2">
+            </div>
+            <div class="col-md-10 col-sm-">
+                <div id="main-navigation" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" onclick="location.href='@Url.Action("index")'">Home</a></li>
+                        <li>
+                            <a href="#" onclick="location.href='@Url.Action("about")'">about us</a>
+                        </li>
+                        <li class="dropdown">
+                            <a onclick="location.href='@Url.Action("services")'">Services</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="#" onclick="location.href='@Url.Action("tax_service")'">Tax Services</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("life_insurance")'">Life Insurance</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("financial")'">Financial Planning</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("rrsp")'">RRSP</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("resp")'">RESP</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("tfsa")'">TFSA</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" onclick="location.href='@Url.Action("tax_center")'">Tax Center</a>
+                        </li>
+                        <li>
+                            <a href="http://teammurria.com/" target="_blank">Real Estate</a>
+                        </li>
+                         <!--<li><a href="#" onclick="location.href='@Url.Action("appointment")'">Appointment</a></li>--->
+                        <li><a href="#" onclick="location.href='@Url.Action("contact")'">contact us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1">
+            </div>
+        </div>
+    </nav>
+    <section class="inner-banner">
+        <div class="thm-container">
+            <div class="page-title">
+                <h3>RRSP</h3>
+                <p>Money Doesn’t Come Without 
+Guidance...</p>
+            </div>
+        </div>
+    </section>
+    <div class="bread-cumb">
+        <div class="thm-container">
+            <ul class="list-inline">
+                <li><a href="#" onclick="location.href='@Url.Action("index")'">Home</a></li>
+                <li><a href="#" onclick="location.href='@Url.Action("services")'"><span>Services</span></a></li>
+                <li><span>RRSP</span></li>
+            </ul>
+        </div>
+    </div>
+    <section class="page with-sidebar left blog-page sec-pad service-single-page">
+        <div class="thm-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left-box">
+                        <div class="single-service-box">
+                            <div class="img-box"><img src="~/GoldenLifeFinacial/images/single-service-3.png" alt="Awesome Image"></div>
+                            <!-- /.img-box-->
+                            <div class="sec-title">
+                                <h2>What is a RRSP?</h2>
+                                <div class="decor-line"></div>
+                            </div>
+                            <p>An Registered Retirement Savings Plan (RRSP) is a retirement savings plan to which you or your spouse contribute. An RRSP is registered with the Canadian government which allows you to pay less tax and build a larger retirement fund for the future. When you make a deposit to your RRSP, it creates an income tax deduction for the deposited amount that you can use in the current year or use on a future year’s income tax return. Tax deductions reduce your taxable income for the year and this often results in an income tax refund.</p><span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div>
+
+                                <h4>What are the benefits of an RRSP?</h4>
+                                <h6>Some of the benefits of an RRSP are:</h6>
+                                <ul class="list-box">
+                                    <li>-  You receive a tax deduction for the amount of money you contribute.</li>
+                                    <li>-  Your investments grow tax free, which helps your retirement savings grow faster</li>
+                                    <li>-  When you make withdrawals during retirement, you’ll likely be in a lower tax bracket and therefore pay less tax</li>
+                                    <li>-  You can use your RRSP to help make a down payment on a home or help pay for your education</li>
+                                </ul>
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div>
+
+                                <h4>Who is eligible for an RRSP?</h4>
+                                <h6>You are eligible for an RRSP if you:</h6>
+                                <ul class="list-box">
+                                    <li>-  Are a Canadian resident for tax purposes </li>
+                                    <li>-  Are under the age of 71</li>
+                                    <li>-  Have an income</li>
+                                    <li>-  File income taxes in Canada</li>
+                                    </ul>
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div class="row">
+                                <div>
+                                    <div class="right-box">
+                                        <h4>How do I open my RRSP today?</h4>
+                                        <p>Goldenlife Financial Solutions Inc. can help you register your RRSP plan.</p>
+                                    </div>
+                                    <!-- /.right-box-->
+                                </div>
+                                <!-- /.col-md-6-->
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div class="row">
+                                <div>
+                                    <div class="right-box">
+                                        <h4>How much can I contribute to my RRSP?</h4>
+                                        <p>The amount you can contribute (your deduction limit), depends on how much you earn. You can put up to 18 per cent of your income from the previous year. This amount can be found on
+                                         the Notice of Assessment you received after filing last year’s taxes.</p>
+                                    </div>
+                                    <!-- /.right-box-->
+                                </div>
+                                <!-- /.col-md-6-->
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div class="row">
+                                <div>
+                                    <div class="right-box">
+                                        <h4>When can I contribute to my RRSP?</h4>
+                                        <p>You can make a contribution to your RRSP at any time before the deadline.</p>
+                                    </div>
+                                    <!-- /.right-box-->
+                                </div>
+                                <!-- /.col-md-6-->
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div class="row">
+                                <div>
+                                    <div class="right-box">
+                                        <h4>What is the RRSP contribution deadline?</h4>
+                                        <p>The deadline for contributing to an RRSP for the 2018 tax year is March 1, 2019.</p>
+                                    </div>
+                                    <!-- /.right-box-->
+                                </div>
+                                <!-- /.col-md-6-->
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div>
+
+                                <h4>What types of plans can I choose from?</h4>
+                                <h6>There are three types of RRSPs:</h6>
+                                <ul class="list-box">
+                                    <li>-  An individual RRSP.</li>
+                                    <li>-  A partner or spousal RRSP</li>
+                                    <li>-  A group RRSP</li>
+                                </ul>
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div class="row">
+                                <div>
+                                    <div class="right-box">
+                                        <h4>How long can I contribute to my RRSP?</h4>
+                                        <p>Contributions to your RRSP can begin at 18 years of age and can be made up until December 31 of the year you turn 71.</p>
+                                    </div>
+                                    <!-- /.right-box-->
+                                </div>
+                                <!-- /.col-md-6-->
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div>
+
+                                <h4>Can I take money out of my RRSP before I retire?</h4>
+                                <h6>You can borrow money from your RRSP tax free under 2 plans:</h6>
+                                <ul class="list-box">
+                                    <li>-  Home Buyers' Plan (HBP)</li>
+                                    <li>-  Lifelong Learning Plan (LLP)</li>
+                                    <li>-  A group RRSP</li>
+                                </ul>
+                            </div>
+                            <span class="space-25"></span><span class="border"></span><span class="space-15"></span>
+                            <div class="row">
+                                <div>
+                                    <div class="right-box">
+                                        <h4>How do I receive income from an RRSP after I retire?</h4>
+                                        <p>You must close your RRSP before the end of the year you turn age 71. You can take your savings in cash, leave the RRSP as it is. Or you can convert your RRSP into to a RRIF.</p>
+                                    </div>
+                                    <!-- /.right-box-->
+                                </div>
+                                <!-- /.col-md-6-->
+                            </div>
+                        </div>
+                        <!-- /.single-service-box-->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right-box">
+                        <div class="single-sidebar-widget">
+                            <div class="single-service-list-widget">
+                                <ul>
+                                    <li><a href="#" onclick="location.href='@Url.Action("tax_service")'">Tax Services</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("life_insurance")'">Life Insurance</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("financial")'">Financial Planning</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("rrsp")'">RRSP</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("resp")'">RESP</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("tfsa")'">TFSA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single-sidebar-widget">
+                            <div class="single-service-contact">
+                                <div class="inn">
+                                    <h3>Contact us</h3>
+                                    <p>We are here to help you</p>
+                                </div>
+                                <a href="tel:905-602-5333">Office: 905 - 602 - 5533</a>
+                                <a href="fax:905-602-84711">Fax: 905 - 602 - 8471 </a>
+                                <a href="mailto:info@goldenlifesolutions.com">E-Mail: info@goldenlifesolutions.com</a>
+                            </div>
+                            <!-- /.single-service-contact-->
+                        </div>
+                        <!-- /.single-sidebar-widget-->
+                        <!-- /.single-sidebar-widget-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-contacts">
+        <div class="thm-container">
+            <h2>We help you to make the best marketable strategy and execution</h2><a data-animation="animated fadeInLeft" href="#" onclick="location.href='@Url.Action("contact")'" class="thm-button">Contact us<i class="fa fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="thm-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-widget about-widget">
+                        <a href="index.html"><img src="~/GoldenLifeFinacial/images/new/logo2.png" alt="Awesome Image"></a>
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>-->
+                        <div class="tel-box">
+                            <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                            <div class="text-box">
+                                <p>2600 Skymark Ave, Unit 9, Suite 104 <br />Mississauga, ON, L4W5B2</p>
+                            </div>
+                        </div>
+                        <div class="tel-box">
+                            <div class="icon-box"><i class="fa fa-phone"></i></div>
+                            <div class="text-box">
+                                <p>Off: 905-602-5533  <br /> Dir: 647-281-5304</p>
+                            </div>
+                        </div>
+                        <div class="tel-box">
+                            <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                            <div class="text-box">
+                                <p><a href="mailto:info@goldenlifesolutions.com">info@goldenlifesolutions.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-widget links-widget links-widget-pac">
+                        <div class="title">
+                            <h2>Explore</h2>
+                            <div class="decor-line"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <ul>
+                                    <li><a href="#" onclick="location.href='@Url.Action("index")'">Home</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("about")'">About Us</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("services")'">Services</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("contact")'">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <ul>
+                                    <li><a href="#" onclick="location.href='@Url.Action("tax_center")'">Tax Center</a></li>
+                                    <li><a href="http://teammurria.com/" target="_blank">Real Estate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-widget subscribe-widget">
+                        <div class="title">
+                            <h2>Updates and offers</h2>
+                            <div class="decor-line"></div>
+                        </div>
+                        <form action="#">
+                            <p>Get latest updates and offers.</p>
+                            <div class="newsletter-widget">
+                                <input type="text" id="Email" placeholder="Enter your email address">
+                                <button type="button" onclick="GetLatestUpdates()" class="thm-button"><i class="fa fa-envelope"></i></button>
+                            </div>
+                        </form>
+                        <ul class="social list-inline">
+                            <li><a href="https://www.facebook.com/goldenlifefinancial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            @*<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>*@
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-bottom">
+        <div class="thm-container clearfix">
+            <div class="pull-left">
+                <p>Copyright © Goldenlife Financial 2017. All rights reserved. </p>
+            </div>
+            <div class="pull-right">
+                <p>Designed & Developed by: Only4Agents</p>
+            </div>
+        </div>
+    </section>
+    <!-- helper js-->
+    <script src="~/GoldenLifeFinacial/plugins/jquery.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/owl.carousel-2/owl.carousel.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/jquery.mixitup.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/Chart.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/waypoints.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/jquery.counterup.min.js"></script>
+    <script src="~/GoldenLifeFinacial/js/theme.js"></script>
+</body>
+</html>
+<script>
+    function GetLatestUpdates() {
+
+        if (ValidateEmail()) {
+            var person = {
+                email: $("#Email").val(),
+            }
+
+            $('#target').html('sending..');
+
+            $.ajax({
+                url: '/GoldenLife/GetLatestUpdates',
+                type: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    $('#target').html(data.msg);
+                    $("#Email").val("");
+                },
+                data: person
+            });
+        }
+        else {
+            return false;
+        }
+    }
+    function ValidateEmail() {
+        //Email validation
+        var Email = $("#Email").val();
+        if (Email !== '') {
+            var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (Email.length > 30) {
+                alert('email length cannot exceed more than 30 characters.');
+                $("#Email").addClass('validation_control');
+                return false;
+            } else if (!emailReg.test(Email)) {
+                alert('please enter the valid email.');
+                $("#Email").addClass('validation_control');
+                return false;
+            }
+            else {
+                $("#Email").removeClass('validation_control');
+                return true;
+            }
+        }
+        else {
+            $("#Email").addClass('validation_control');
+            alert('must enter emails.');
+            return false;
+        }
+
+        //End
+    }
+</script>

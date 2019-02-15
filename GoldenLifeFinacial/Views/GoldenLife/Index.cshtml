@@ -1,0 +1,469 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Goldenlife Finance</title>
+    <!-- mobile responsive meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/fncp-icon/style.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/Stroke-Gap-Icons-Webfont/style.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/animate.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/owl.carousel-2/assets/owl.carousel.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/owl.carousel-2/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/plugins/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- main stylesheet-->
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/css/style.css">
+    <link rel="stylesheet" href="~/GoldenLifeFinacial/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="thm-container clearfix">
+            <div class="logo pull-left"><a href="#" onclick="location.href='@Url.Action("index")'"><img src="~/GoldenLifeFinacial/images/logo.png" alt="Awesome Image"></a></div>
+            <div class="header-right-info pull-right">
+                <ul>
+                    <li>
+                        <div class="single-header-right-info">
+                            <div class="icon-box"><i class="icon icon-Pointer"></i></div>
+                            <div class="text-box">
+                                <p>
+                                    2600 Skymark Ave, Unit 9, Suite 104 <br>
+                                    Mississauga, ON, L4W5B2
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    <li>
+                        <div class="single-header-right-info">
+                            <div class="icon-box"><i class="icon icon-Timer"></i></div>
+                            <div class="text-box">
+                                <p>Mon - Fri 10:00am - 6:00pm<br>Sat : By Appointment Only</p>
+                            </div>
+                        </div>
+						 <li>
+                        <div class="single-header-right-info">
+                            <div class="icon-box"><i class="icon icon-Phone2"></i></div>
+                            <div class="text-box">
+                                <p>Off: 905-602-5533 <br>Dir: 647-281-5304 <br> Fax: 905-602-8471</p>
+                            </div>
+                        </div>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav id="main-navigation-wrapper" class="navbar navbar-default finance-navbar">
+        <div class="thm-container">
+            <div class="navbar-header">
+                <div class="logo-menu"><img src="~/GoldenLifeFinacial/images/new/logo-menu.png" alt=""></div>
+                <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="col-md-2 col-sm-2">
+            </div>
+            <div class="col-md-10 col-sm-">
+                <div id="main-navigation" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" onclick="location.href='@Url.Action("index")'">Home</a></li>
+                        <li>
+                            <a href="#" onclick="location.href='@Url.Action("about")'">about us</a>
+                        </li>
+                        <li class="dropdown">
+                            <a onclick="location.href='@Url.Action("services")'">Services</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="#" onclick="location.href='@Url.Action("tax_service")'">Tax Services</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("life_insurance")'">Life Insurance</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("financial")'">Financial Planning</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("rrsp")'">RRSP</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("resp")'">RESP</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("tfsa")'">TFSA</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" onclick="location.href='@Url.Action("tax_center")'">Tax Center</a>
+                        </li>
+                        <li>
+                            <a href="http://teammurria.com/" target="_blank">Real Estate</a>
+                        </li>
+                         <!--<li><a href="#" onclick="location.href='@Url.Action("appointment")'">Appointment</a></li>--->
+                        <li><a href="#" onclick="location.href='@Url.Action("contact")'">contact us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1">
+            </div>
+        </div>
+    </nav>
+    <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider">
+        <!-- Wrapper for slides-->
+        <div role="listbox" class="carousel-inner">
+		<div style="background-image: url(../GoldenLifeFinacial/images/new/slider5.jpg);background-position: center right;" class="item slide-3">
+                <div class="carousel-caption">
+                    <div class="thm-container">
+                        <div class="box valign-top">
+                            <div class="content text-left pull-right">
+                                <h2 data-animation="animated fadeInUp">RRSP Deadline</h2>
+                                <p data-animation="animated fadeInDown">Last day to contribute to get a  deduction on your </br>2018 tax return is March 1, 2019.</span></p>
+                                <a data-animation="animated fadeInLeft" href="#"  onclick="location.href='@Url.Action("contact")'" class="thm-button inverse">Contact Us<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image: url(../GoldenLifeFinacial/images/new/slider1.jpg);background-position: center right;" class="item slide-3">
+                <div class="carousel-caption">
+                    <div class="thm-container">
+                        <div class="box valign-bottom">
+                            <div class="content text-center">
+                                <img data-animation="animated fadeInUp" src="~/GoldenLifeFinacial/images/new/title-silder.png" alt="">
+                                <h2 data-animation="animated fadeInUp">Helping Businesses </br>Succeed</h2>
+                                <p data-animation="animated fadeInDown">We view every client relationship like a partnership, <br /> and we truly believe that our success is a result of your success. </p>
+                                <a data-animation="animated fadeInLeft" href="#"  onclick="location.href='@Url.Action("contact")'" class="thm-button">Contact us<i class="fa fa-arrow-right"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image: url(../GoldenLifeFinacial/images/new/slider2.jpg);background-position: center right;" class="item slide-3">
+                <div class="carousel-caption">
+                    <div class="thm-container">
+                        <div class="box valign-top">
+                            <div class="content text-left pull-right">
+                                <h2 data-animation="animated fadeInUp">Helping Businesses </br>Succeed</h2>
+                                <p data-animation="animated fadeInDown">We have the most qualified and up-to-date <br><span class="dib"> resources to assist you with all your business challenges</span></p>
+                                <a data-animation="animated fadeInLeft" href="#"  onclick="location.href='@Url.Action("contact")'" class="thm-button inverse">Contact Us<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image: url(../GoldenLifeFinacial/images/new/slider3.jpg);background-position: center right;" class="item slide-3">
+                <div class="carousel-caption">
+                    <div class="thm-container">
+                        <div class="box valign-top">
+                            <div class="content text-left pull-right">
+                                <h3 data-animation="animated fadeInUp"><span class="dib">Contact Us</span></h3>
+                                <h2 data-animation="animated fadeInUp">For your 2019 Taxes</h2>
+                                <p data-animation="animated fadeInDown"></p>
+                                <a data-animation="animated fadeInUp" href="#" onclick="location.href='@Url.Action("contact")'" class="thm-button">Contact us<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image: url(../GoldenLifeFinacial/images/new/slider4.jpg);background-position: center right;" class="item active slide-1">
+                <div class="carousel-caption">
+                    <div class="thm-container">
+                        <div class="box valign-top">
+                           
+							<div class="content text-left pull-left">
+                                <h2 data-animation="animated fadeInUp">Income Tax <br>Deadlines For 2019</h2>
+                                <p data-animation="animated fadeInDown">Income Tax Deadlines For 2019 <br><span class="dib">has to be filed on or before April 30, 2019</span></p>
+                                <a data-animation="animated fadeInLeft" href="#" onclick="location.href='@Url.Action("contact")'" class="thm-button">Contact Us<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls--><a href="#minimal-bootstrap-carousel" role="button" data-slide="prev" class="left carousel-control"><i class="fa fa-angle-left"></i><span class="sr-only">Previous</span></a><a href="#minimal-bootstrap-carousel" role="button" data-slide="next" class="right carousel-control"><i class="fa fa-angle-right"></i><span class="sr-only">Next</span></a>
+    </div>
+    <section class="welcome-section sec-pad">
+        <div class="thm-container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="heading-row">
+                        <div class="sec-title">
+                            <h2>
+                                <big>10</big> Years of <span>
+                                    Quality Service</span>
+                                 </h2>
+                        </div>
+                        <div class="border-line hidden-xs"></div>
+                        <p class="heading-text"><b>We take pride in giving you the assurance that the assistance you receive comes from years of experience. We are always aware of current trends and opportunities so that our clients can expect up-to-date information and advice.</b> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                        <div class="icon-box"><i class="icon icon-ChartUp"></i></div>
+                        <div class="text-box">
+                            <a href="#" onclick="location.href='@Url.Action("tax_service")'" >
+                                <h4>Tax Services</h4>
+                                <p>Working hand in hand with our clients, we make certain that they are receiving the highest tax.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                        <div class="icon-box"><i class="icon icon-Dollars"></i></div>
+                        <div class="text-box">
+                            <a href="#" onclick="location.href='@Url.Action("life_insurance")'" >
+                                <h4>Life Insurance</h4>
+                                <p>Life insurance is designed to protect your financial security and should be a key part of financial plan.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                        <div class="icon-box"><i class="icon icon-Megaphone"></i></div>
+                        <div class="text-box">
+                            <a href="#" onclick="location.href='@Url.Action("financial")'">
+                                <h4>Financial Planning</h4>
+                                <p>Financial planning is more than budgeting, saving or having the perfect investment strategy.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                        <div class="icon-box"><i class="icon icon-Tag"></i></div>
+                        <div class="text-box">
+                            <a href="#" onclick="location.href='@Url.Action("rrsp")'">
+                                <h4>RRSP</h4>
+                                <p>An Registered Retirement Savings Plan (RRSP) is a retirement savings plan to which you or your spouse.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                        <div class="icon-box"><i class="icon icon-Dollars"></i></div>
+                        <div class="text-box">
+                            <a href="#" onclick="location.href='@Url.Action("resp")'">
+                                <h4>RESP</h4>
+                                <p>A Registered Education Savings Plan (RESP) is registered under the Income Tax Act.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                        <div class="icon-box"><i class="icon icon-Share"></i></div>
+                        <div class="text-box">
+                            <a href="#" onclick="location.href='@Url.Action("tfsa")'">
+                                <h4>TFSA</h4>
+                                <p>A Tax-Free Savings Account (TFSA) is an account that grows tax free. You can hold a mix of investments.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq-sec sec-pad why-choose-bg faq-sec2">
+        <div class="thm-container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="sec-title">
+                        <h2>why choose us</h2>
+                        <div class="decor-line"></div>
+                    </div>
+                    <p class="chus_headng">We will invest the time to fully understand our clients and their needs. </p>
+                    <div class="faq-left-box chus_sct_box">
+                        <div class="single-faq-left">
+                           
+                            <div class="text-box">
+                                <h3>-	Our job is to provide you with the best service and business solutions.</h3>
+                               
+                            </div>
+                        </div>
+                        <div class="single-faq-left">
+                            
+                            <div class="text-box">
+                                <h3>-	Our advice is clear, practical and effective.</h3>
+                                @*<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>*@
+                            </div>
+                        </div>
+                        <div class="single-faq-left">
+                            
+                            <div class="text-box">
+                                <h3>-	We help our clients succeed and turn their dreams into reality.</h3>
+                                @*<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="right-box"><img src="~/GoldenLifeFinacial/images/video.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer-contacts">
+        <div class="thm-container">
+            <h2>We help you to make the best marketable strategy and execution</h2>
+
+<a data-animation="animated fadeInLeft" href="#" onclick="location.href='@Url.Action("contact")'" class="thm-button">Contact us<i class="fa fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="thm-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-widget about-widget">
+                        <a href="#" onclick="location.href='@Url.Action("index")'"><img src="~/GoldenLifeFinacial/images/new/logo2.png" alt="Awesome Image"></a>
+                        
+                        <div class="tel-box">
+                            <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                            <div class="text-box">
+                                <p>2600 Skymark Ave, Unit 9, Suite 104<br /> Mississauga, ON, L4W5B2</p>
+                            </div>
+                        </div>
+                        <div class="tel-box">
+                            <div class="icon-box"><i class="fa fa-phone"></i></div>
+                            <div class="text-box">
+                                <p>Off: 905-602-5533  <br /> Dir: 647-281-5304</p>
+                            </div>
+                        </div>
+                        <div class="tel-box">
+                            <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                            <div class="text-box">
+                                <p><a href="mailto:info@goldenlifesolutions.com">info@goldenlifesolutions.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-widget links-widget links-widget-pac">
+                        <div class="title">
+                            <h2>Explore</h2>
+                            <div class="decor-line"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <ul>
+                                    <li><a href="#" onclick="location.href='@Url.Action("index")'">Home</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("about")'">About Us</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("services")'">Services</a></li>
+                                    <li><a href="#" onclick="location.href='@Url.Action("contact")'">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <ul>
+                                    <li><a href="#" onclick="location.href='@Url.Action("tax_center")'" >Tax Center</a></li>
+                                    <li><a href="http://teammurria.com/" target="_blank">Real Estate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-widget subscribe-widget">
+                        <div class="title">
+                            <h2>Updates and offers</h2>
+                            <div class="decor-line"></div>
+                        </div>
+                        <form action="#">
+                            <p>Get latest updates and offers.</p>
+                            <div class="newsletter-widget">
+                                <input type="text" id="Email" placeholder="Enter your email address">
+                                <button type="button" onclick="GetLatestUpdates()" class="thm-button"><i class="fa fa-envelope"></i></button>
+                            </div>
+                        </form>
+                        <ul class="social list-inline">
+                            <li><a href="https://www.facebook.com/goldenlifefinancial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            @*<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>*@
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-bottom">
+        <div class="thm-container clearfix">
+            <div class="pull-left">
+                <p>Copyright © Goldenlife Financial 2017. All rights reserved. </p>
+            </div>
+            <div class="pull-right">
+                <p>Designed & Developed by: Only4Agents</p>
+            </div>
+        </div>
+    </section>
+    <!-- helper js-->
+    <script src="~/GoldenLifeFinacial/plugins/jquery.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/owl.carousel-2/owl.carousel.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/jquery.mixitup.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/Chart.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/waypoints.min.js"></script>
+    <script src="~/GoldenLifeFinacial/plugins/jquery.counterup.min.js"></script>
+    <script src="~/GoldenLifeFinacial/js/theme.js"></script>
+</body>
+</html>
+<script>
+    function GetLatestUpdates() {
+
+        if (ValidateEmail()) {
+            var person = {
+                email: $("#Email").val(),
+            }
+
+            $('#target').html('sending..');
+
+            $.ajax({
+                url: '/GoldenLife/GetLatestUpdates',
+                type: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    $('#target').html(data.msg);
+                    $("#Email").val("");
+                },
+                data: person
+            });
+        }
+        else {
+            return false;
+        }
+    }
+    function ValidateEmail() {
+        //Email validation
+        var Email = $("#Email").val();
+        if (Email !== '') {
+            var emailReg = /^([\w-\.]+@@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (Email.length > 30) {
+                alert('email length cannot exceed more than 30 characters.');
+                $("#Email").addClass('validation_control');
+                return false;
+            } else if (!emailReg.test(Email)) {
+                alert('please enter the valid email.');
+                $("#Email").addClass('validation_control');
+                return false;
+            }
+            else {
+                $("#Email").removeClass('validation_control');
+                return true;
+            }
+        }
+        else {
+            $("#Email").addClass('validation_control');
+            alert('must enter emails.');
+            return false;
+        }
+
+        //End
+    }
+</script>
